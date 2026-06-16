@@ -1,4 +1,4 @@
-const WHATSAPP_PHONE = "5511932656059";
+const WHATSAPP_PHONE = "5511945394595";
 
 function buildWhatsAppLink(button) {
     const productBlock = button.closest(".product-card, .status-card, .contact-card");
