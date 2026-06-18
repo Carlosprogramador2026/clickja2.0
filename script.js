@@ -18,6 +18,12 @@ function buildWhatsAppLink(button) {
     button.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(messageLines.join("\n"))}`;
     button.target = "_blank";
     button.rel = "noopener";
+
+    button.addEventListener("click", () => {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18248241205/RmSxCLa09cAcELWguP1D'
+        });
+    });
 }
 
 document.querySelectorAll(".WhatsApp-button").forEach(buildWhatsAppLink);
